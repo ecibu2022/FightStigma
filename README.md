@@ -1,0 +1,10 @@
+#Appp screenshots
+![Splash](https://github.com/ecibu2022/FightStigma/assets/118972537/ce036d69-7136-435f-b76e-72a36879484c)
+![Register](https://github.com/ecibu2022/FightStigma/assets/118972537/09b4391f-0729-4a82-aa04-8221067f226f)
+![PostLayout](https://github.com/ecibu2022/FightStigma/assets/118972537/0b7a1ba6-d2f4-4430-a06e-572e2d0f64bf)
+![Post](https://github.com/ecibu2022/FightStigma/assets/118972537/62411ac6-4caa-4f25-8ea4-c9cff324075e)
+![Patient](https://github.com/ecibu2022/FightStigma/assets/118972537/1b39a992-fde6-47f9-806f-def74b34f086)
+![Login](https://github.com/ecibu2022/FightStigma/assets/118972537/72829e9f-09c1-4878-a7eb-ecc9a4d9a9ac)
+![Counselor](https://github.com/ecibu2022/FightStigma/assets/118972537/71f6693e-889c-4b12-a33d-a4be5ead0cf4)
+![Comments](https://github.com/ecibu2022/FightStigma/assets/118972537/8c7fc176-48ee-4a55-95cb-6596a5b39be9)
+![Admin](https://github.com/ecibu2022/FightStigma/assets/118972537/0ac77b36-3a28-4a76-a438-fc14a293ce48)
