@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "30301640526",
+    "project_id": "fightstigma-c53d5",
+    "storage_bucket": "fightstigma-c53d5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:30301640526:android:30aa793b09bd9d7cd2701f",
+        "android_client_info": {
+          "package_name": "com.example.fightstigma"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVy6kSF6W9y85g2hiNj46Um9v409Yl-BI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

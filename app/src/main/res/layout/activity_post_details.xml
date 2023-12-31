@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".PostDetails"
+        android:padding="10dp">
+
+        <RelativeLayout
+            android:id="@+id/details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/userImage"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/common_google_signin_btn_icon_light_normal"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/userImage"
+                android:layout_marginStart="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/date_and_time"
+                    android:textSize="14sp"
+                    android:textColor="#000000"
+                    android:layout_marginBottom="4dp"/>
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:text="@string/title"
+                    android:textSize="14sp"
+                    android:textColor="#666666"
+                    android:layout_marginBottom="4dp"/>
+
+                <TextView
+                    android:id="@+id/body"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:text="@string/body"
+                    android:textSize="14sp"
+                    android:textColor="#666666"/>
+
+                <LinearLayout
+                    android:id="@+id/show"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/edit"
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/edit"
+                        android:layout_weight="1"
+                        android:textColor="@color/green"
+                        android:layout_margin="10dp"
+                        style="@style/Widget.MaterialComponents.Button.OutlinedButton"/>
+                    <Button
+                        android:id="@+id/delete"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/delete"
+                        android:layout_weight="1"
+                        android:textColor="@color/red"
+                        android:layout_margin="10dp"
+                        style="@style/Widget.MaterialComponents.Button.OutlinedButton"/>
+
+                </LinearLayout>
+                
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="8dp">
+
+                    <ImageView
+                        android:id="@+id/like"
+                        android:layout_width="20dp"
+                        android:layout_height="25dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/like"/>
+
+                    <TextView
+                        android:id="@+id/num_of_likes"
+                        android:layout_width="0dp"
+                        android:layout_height="25dp"
+                        android:layout_marginStart="-50dp"
+                        android:layout_weight="1"
+                        android:text="@string/_0"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="?android:attr/textColorSecondary"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/post_comments"
+        android:layout_below="@+id/details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:text="@string/comments"
+            android:layout_marginTop="10dp"
+            android:textSize="14sp"
+            android:layout_weight="1"
+            android:textColor="#666666"/>
+
+        <TextView
+            android:id="@+id/total_comments"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="-290dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:text="@string/_0"
+            android:textAppearance="?attr/textAppearanceBody2"
+            android:textColor="?android:attr/textColorSecondary"
+            />
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/post_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/post_comments">
+
+            <EditText
+                android:id="@+id/userComment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/write_comment"
+                android:inputType="textAutoComplete"
+                android:minHeight="48dp" />
+
+            <Button
+                android:id="@+id/post"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:text="@string/post"
+                android:backgroundTint="@color/green"
+                android:textAllCaps="true"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:layout_below="@+id/post_comment">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/comments"
+            android:layout_margin="4dp"
+            android:layout_marginTop="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    </RelativeLayout>
